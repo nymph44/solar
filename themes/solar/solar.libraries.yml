@@ -1,51 +1,65 @@
 base:
   version: VERSION
   css:
-    component:
-      css/components/action-links.css:
-        weight: -10
-      css/components/breadcrumb.css:
-        weight: -10
-      css/components/button.css:
-        weight: -10
-      css/components/container-inline.css:
-        weight: -10
-      css/components/details.css:
-        weight: -10
-      css/components/exposed-filters.css:
-        weight: -10
-      css/components/field.css:
-        weight: -10
-      css/components/form.css:
-        weight: -10
-      css/components/icons.css:
-        weight: -10
-      css/components/inline-form.css:
-        weight: -10
-      css/components/item-list.css:
-        weight: -10
-      css/components/link.css:
-        weight: -10
-      css/components/links.css:
-        weight: -10
-      css/components/menu.css:
-        weight: -10
-      css/components/more-link.css:
-        weight: -10
-      css/components/pager.css:
-        weight: -10
-      css/components/tabledrag.css:
-        weight: -10
-      css/components/tableselect.css:
-        weight: -10
-      css/components/tablesort.css:
-        weight: -10
-      css/components/tabs.css:
-        weight: -10
-      css/components/textarea.css:
-        weight: -10
-      css/components/ui-dialog.css:
-        weight: -10
+    theme:
+      css/layout.css: {}
+      css/element.css: {}
+      css/print.css: { media: print }
+  component:
+    css/components/action-links.css:
+      weight: -10
+    css/components/breadcrumb.css:
+      weight: -10
+    css/components/button.css:
+      weight: -10
+    css/components/container-inline.css:
+      weight: -10
+    css/components/details.css:
+      weight: -10
+    css/components/exposed-filters.css:
+      weight: -10
+    css/components/field.css:
+      weight: -10
+    css/components/form.css:
+      weight: -10
+    css/components/icons.css:
+      weight: -10
+    css/components/inline-form.css:
+      weight: -10
+    css/components/item-list.css:
+      weight: -10
+    css/components/link.css:
+      weight: -10
+    css/components/links.css:
+      weight: -10
+    css/components/menu.css:
+      weight: -10
+    css/components/more-link.css:
+      weight: -10
+    css/components/pager.css:
+      weight: -10
+    css/components/tabledrag.css:
+      weight: -10
+    css/components/tableselect.css:
+      weight: -10
+    css/components/tablesort.css:
+      weight: -10
+    css/components/tabs.css:
+      weight: -10
+    css/components/textarea.css:
+      weight: -10
+    css/components/ui-dialog.css:
+      weight: -10
+saira:
+  license:
+    name: Open Font License
+    url: https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+    gpl-compatible: true
+  css:
+    theme:
+      //fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap':
+        { type: external }
+    css/styles.css: {}
 dialog:
   version: VERSION
   css:
@@ -68,12 +82,12 @@ image-widget:
   version: VERSION
   css:
     component:
-      css/components/image-widget.css: {  }
+      css/components/image-widget.css: {}
 indented:
   version: VERSION
   css:
     component:
-      css/components/indented.css: {  }
+      css/components/indented.css: {}
 messages:
   version: VERSION
   css:
@@ -96,7 +110,7 @@ search-results:
   version: VERSION
   css:
     component:
-      css/components/search-results.css: {  }
+      css/components/search-results.css: {}
 user:
   version: VERSION
   css:

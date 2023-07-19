@@ -3,7 +3,16 @@ description: "Solar thema"
 type: theme
 "base theme": stable9
 starterkit: true
+regions:
+  header: Header
+  solarmenu: Navigation
+  content: Content
+  footer: Footer
+  page_top: Page top
+  page_bottom: Page bottom
 libraries:
+  - solar/global-css
+  - solar/saira
   - solar/base
   - solar/messages
   - core/normalize
