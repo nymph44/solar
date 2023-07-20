@@ -34,6 +34,12 @@ body {
   font-size: 18px;
 }
 
+.layout-container {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px !important;
+}
+
 /* Links */
 a {
   color: var(--secondary);
@@ -50,7 +56,7 @@ a {
 }
 
 .button:hover {
-  background-color: var(--base);
+  background-color: var(--primary);
   color: var(--base);
 }
 
@@ -64,6 +70,6 @@ a {
 }
 
 .secondary-button:hover {
-  background-color: var(--base);
+  background-color: var(--primary);
   color: var(--base);
 }
