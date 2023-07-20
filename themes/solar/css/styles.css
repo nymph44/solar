@@ -1,3 +1,69 @@
-body {
+/* Kleuren */
+:root {
+  --base: #f8f7f8;
+  --primary: #282a5b;
+  --primary-focus: #c5c8e3;
+  --secondary: #66c4ac;
+  --secondary-focus: #b8e2d2;
+  --neutral: #9dd1e1;
+  --accent: #f2e5ab;
+}
+
+/* Typeface */
+h1 {
   font-family: "Saira", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Saira", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+/* Links */
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* Buttons */
+.button {
+  background-color: var(--base);
+  color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--base);
+  color: var(--base);
+}
+
+/* Secondary buttons */
+.secondary-button {
+  background-color: var(--secondary);
+  color: var(--primary);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: var(--base);
+  color: var(--base);
 }
