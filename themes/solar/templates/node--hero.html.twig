@@ -1,10 +1,10 @@
 <div{{ attributes.addClass('hero-section') }}>
-  {{ dump(node.field_backdrop_image.entity.uri.value) }}
-  <div class="hero-column-left"{% if node.field_backdrop_image.entity %} style="background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary) 0%, transparent 50%), url('{{ file_url(node.field_backdrop_image.entity.uri.value) }}');"{% else %} style="background-color: var(--primary);" {% endif %}>
+  <div class="hero-column-left"{% if node.field_backdrop_image.entity %} style="background-color: var(--primary); background-image: linear-gradient(to bottom, transparent 0%, var(--primary) 50%), url('{{ file_url(content.field_backdrop_image.0['#item'].entity.uri.value) }}');"{% else %} style="background-color: var(--primary);" {% endif %}>
     <div class="hero-column-left-content">
       <h2 class="hero-title">{{ content.field_title }}</h2>
       <p class="hero-subtitle">{{ content.field_subtitle }}</p>
       <button class="secondary-button-solar">{{ content.field_button_text }}</button>
+      <img class="img" src="{{ file_url(content.field_icon.0['#item'].entity.uri.value) }}" />
     </div>
   </div>
   <div class="hero-column-right">

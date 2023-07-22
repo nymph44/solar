@@ -39,15 +39,11 @@ class __TwigTemplate_d01d4e0d39a447e22201ea75b7722ba3 extends Template
         echo "<div";
         echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["attributes"] ?? null), "addClass", [0 => "hero-section"], "method", false, false, true, 1), 1, $this->source), "html", null, true);
         echo ">
-  ";
-        // line 2
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, Drupal\Core\Template\DebugExtension::dump($this->env, $context, ...[0 => $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["node"] ?? null), "field_backdrop_image", [], "any", false, false, true, 2), "entity", [], "any", false, false, true, 2), "uri", [], "any", false, false, true, 2), "value", [], "any", false, false, true, 2), 2, $this->source)]), "html", null, true);
-        echo "
   <div class=\"hero-column-left\"";
-        // line 3
-        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["node"] ?? null), "field_backdrop_image", [], "any", false, false, true, 3), "entity", [], "any", false, false, true, 3)) {
-            echo " style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary) 0%, transparent 50%), url('";
-            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getFileUrl($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["node"] ?? null), "field_backdrop_image", [], "any", false, false, true, 3), "entity", [], "any", false, false, true, 3), "uri", [], "any", false, false, true, 3), "value", [], "any", false, false, true, 3), 3, $this->source)), "html", null, true);
+        // line 2
+        if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["node"] ?? null), "field_backdrop_image", [], "any", false, false, true, 2), "entity", [], "any", false, false, true, 2)) {
+            echo " style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, transparent 0%, var(--primary) 50%), url('";
+            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getFileUrl($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (($__internal_compile_0 = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_backdrop_image", [], "any", false, false, true, 2), 0, [], "any", false, false, true, 2)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["#item"] ?? null) : null), "entity", [], "any", false, false, true, 2), "uri", [], "any", false, false, true, 2), "value", [], "any", false, false, true, 2), 2, $this->source)), "html", null, true);
             echo "');\"";
         } else {
             echo " style=\"background-color: var(--primary);\" ";
@@ -55,17 +51,21 @@ class __TwigTemplate_d01d4e0d39a447e22201ea75b7722ba3 extends Template
         echo ">
     <div class=\"hero-column-left-content\">
       <h2 class=\"hero-title\">";
-        // line 5
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_title", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
+        // line 4
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_title", [], "any", false, false, true, 4), 4, $this->source), "html", null, true);
         echo "</h2>
       <p class=\"hero-subtitle\">";
-        // line 6
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_subtitle", [], "any", false, false, true, 6), 6, $this->source), "html", null, true);
+        // line 5
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_subtitle", [], "any", false, false, true, 5), 5, $this->source), "html", null, true);
         echo "</p>
       <button class=\"secondary-button-solar\">";
-        // line 7
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_button_text", [], "any", false, false, true, 7), 7, $this->source), "html", null, true);
+        // line 6
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_button_text", [], "any", false, false, true, 6), 6, $this->source), "html", null, true);
         echo "</button>
+      <img class=\"img\" src=\"";
+        // line 7
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getFileUrl($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (($__internal_compile_1 = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_icon", [], "any", false, false, true, 7), 0, [], "any", false, false, true, 7)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["#item"] ?? null) : null), "entity", [], "any", false, false, true, 7), "uri", [], "any", false, false, true, 7), "value", [], "any", false, false, true, 7), 7, $this->source)), "html", null, true);
+        echo "\" />
     </div>
   </div>
   <div class=\"hero-column-right\">
@@ -90,18 +90,18 @@ class __TwigTemplate_d01d4e0d39a447e22201ea75b7722ba3 extends Template
 
     public function getDebugInfo()
     {
-        return array (  74 => 11,  67 => 7,  63 => 6,  59 => 5,  48 => 3,  44 => 2,  39 => 1,);
+        return array (  74 => 11,  67 => 7,  63 => 6,  59 => 5,  55 => 4,  44 => 2,  39 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div{{ attributes.addClass('hero-section') }}>
-  {{ dump(node.field_backdrop_image.entity.uri.value) }}
-  <div class=\"hero-column-left\"{% if node.field_backdrop_image.entity %} style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary) 0%, transparent 50%), url('{{ file_url(node.field_backdrop_image.entity.uri.value) }}');\"{% else %} style=\"background-color: var(--primary);\" {% endif %}>
+  <div class=\"hero-column-left\"{% if node.field_backdrop_image.entity %} style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, transparent 0%, var(--primary) 50%), url('{{ file_url(content.field_backdrop_image.0['#item'].entity.uri.value) }}');\"{% else %} style=\"background-color: var(--primary);\" {% endif %}>
     <div class=\"hero-column-left-content\">
       <h2 class=\"hero-title\">{{ content.field_title }}</h2>
       <p class=\"hero-subtitle\">{{ content.field_subtitle }}</p>
       <button class=\"secondary-button-solar\">{{ content.field_button_text }}</button>
+      <img class=\"img\" src=\"{{ file_url(content.field_icon.0['#item'].entity.uri.value) }}\" />
     </div>
   </div>
   <div class=\"hero-column-right\">
@@ -113,15 +113,15 @@ class __TwigTemplate_d01d4e0d39a447e22201ea75b7722ba3 extends Template
     
     public function checkSecurity()
     {
-        static $tags = array("if" => 3);
+        static $tags = array("if" => 2);
         static $filters = array("escape" => 1);
-        static $functions = array("dump" => 2, "file_url" => 3);
+        static $functions = array("file_url" => 2);
 
         try {
             $this->sandbox->checkSecurity(
                 ['if'],
                 ['escape'],
-                ['dump', 'file_url']
+                ['file_url']
             );
         } catch (SecurityError $e) {
             $e->setSourceContext($this->source);
