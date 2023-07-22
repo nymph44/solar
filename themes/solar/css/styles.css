@@ -39,7 +39,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px !important;
-  max-width: 1080px;
+  /* max-width: 1080px; */
 }
 
 /* Links */
@@ -97,7 +97,7 @@ a {
 .hero-column-left {
   position: relative; /* For positioning the overlay */
   width: 60%;
-  background: var(--primary); /* Fallback background color */
+  background: var(--base); /* Fallback background color */
   background: linear-gradient(
     to bottom,
     var(--primary) 50%,
@@ -110,8 +110,10 @@ a {
 /* Left column overlay */
 .hero-column-left {
   position: relative; /* For positioning the overlay */
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover; */
+  background-size: cover 100%;
+  background-repeat: no-repeat;
+  background-position: top;
   padding-left: 100px;
   padding-right: 100px;
 }
@@ -138,7 +140,8 @@ a {
 }
 
 .hero-scroll-icon-container {
-  position: absolute;
+  /* position: absolute; */
   bottom: 10%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }

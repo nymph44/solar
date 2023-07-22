@@ -38,15 +38,14 @@ class __TwigTemplate_bccf6376fefb02e0aa07c1dd42103d2c extends Template
         // line 1
         echo "<div class=\"layout-container\">
 
-
   <main role=\"main\">
     <a id=\"main-content\" tabindex=\"-1\"></a>";
-        // line 6
+        // line 5
         echo "
     <div class=\"layout-content\">
       ";
-        // line 8
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["page"] ?? null), "content", [], "any", false, false, true, 8), 8, $this->source), "html", null, true);
+        // line 7
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["page"] ?? null), "content", [], "any", false, false, true, 7), 7, $this->source), "html", null, true);
         echo "
     </div>
 
@@ -54,18 +53,18 @@ class __TwigTemplate_bccf6376fefb02e0aa07c1dd42103d2c extends Template
   </main>
 
   ";
-        // line 14
-        if (twig_get_attribute($this->env, $this->source, ($context["page"] ?? null), "footer", [], "any", false, false, true, 14)) {
-            // line 15
+        // line 13
+        if (twig_get_attribute($this->env, $this->source, ($context["page"] ?? null), "footer", [], "any", false, false, true, 13)) {
+            // line 14
             echo "    <footer role=\"contentinfo\">
       ";
-            // line 16
-            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["page"] ?? null), "footer", [], "any", false, false, true, 16), 16, $this->source), "html", null, true);
+            // line 15
+            echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["page"] ?? null), "footer", [], "any", false, false, true, 15), 15, $this->source), "html", null, true);
             echo "
     </footer>
   ";
         }
-        // line 19
+        // line 18
         echo "
 </div>";
     }
@@ -82,13 +81,12 @@ class __TwigTemplate_bccf6376fefb02e0aa07c1dd42103d2c extends Template
 
     public function getDebugInfo()
     {
-        return array (  69 => 19,  63 => 16,  60 => 15,  58 => 14,  49 => 8,  45 => 6,  39 => 1,);
+        return array (  68 => 18,  62 => 15,  59 => 14,  57 => 13,  48 => 7,  44 => 5,  39 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div class=\"layout-container\">
-
 
   <main role=\"main\">
     <a id=\"main-content\" tabindex=\"-1\"></a>{# link is in html.html.twig #}
@@ -112,8 +110,8 @@ class __TwigTemplate_bccf6376fefb02e0aa07c1dd42103d2c extends Template
     
     public function checkSecurity()
     {
-        static $tags = array("if" => 14);
-        static $filters = array("escape" => 8);
+        static $tags = array("if" => 13);
+        static $filters = array("escape" => 7);
         static $functions = array();
 
         try {

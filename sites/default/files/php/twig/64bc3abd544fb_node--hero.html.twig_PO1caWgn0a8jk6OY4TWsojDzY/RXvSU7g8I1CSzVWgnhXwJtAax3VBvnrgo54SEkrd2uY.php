@@ -42,7 +42,7 @@ class __TwigTemplate_d01d4e0d39a447e22201ea75b7722ba3 extends Template
   <div class=\"hero-column-left\"";
         // line 2
         if (twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["node"] ?? null), "field_backdrop_image", [], "any", false, false, true, 2), "entity", [], "any", false, false, true, 2)) {
-            echo " style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary-50) 0%, var(--primary) 50%), url('";
+            echo " style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary-50) 0%, var(--primary) 100%), url('";
             echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getFileUrl($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (($__internal_compile_0 = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_backdrop_image", [], "any", false, false, true, 2), 0, [], "any", false, false, true, 2)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["#item"] ?? null) : null), "entity", [], "any", false, false, true, 2), "uri", [], "any", false, false, true, 2), "value", [], "any", false, false, true, 2), 2, $this->source)), "html", null, true);
             echo "');\"";
         } else {
@@ -63,10 +63,11 @@ class __TwigTemplate_d01d4e0d39a447e22201ea75b7722ba3 extends Template
         echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_button_text", [], "any", false, false, true, 6), 6, $this->source), "html", null, true);
         echo "</button>
       <div class=\"hero-scroll-icon-container\">
-        <img class=\"hero-scroll-icon\" src=\"";
-        // line 8
-        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getFileUrl($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (($__internal_compile_1 = twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_icon", [], "any", false, false, true, 8), 0, [], "any", false, false, true, 8)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["#item"] ?? null) : null), "entity", [], "any", false, false, true, 8), "uri", [], "any", false, false, true, 8), "value", [], "any", false, false, true, 8), 8, $this->source)), "html", null, true);
-        echo "\" />
+        ";
+        // line 9
+        echo "        ";
+        echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, ($context["content"] ?? null), "field_icon", [], "any", false, false, true, 9), 9, $this->source), "html", null, true);
+        echo "
       </div>
     </div>
   </div>
@@ -89,19 +90,20 @@ class __TwigTemplate_d01d4e0d39a447e22201ea75b7722ba3 extends Template
 
     public function getDebugInfo()
     {
-        return array (  68 => 8,  63 => 6,  59 => 5,  55 => 4,  44 => 2,  39 => 1,);
+        return array (  68 => 9,  63 => 6,  59 => 5,  55 => 4,  44 => 2,  39 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div{{ attributes.addClass('hero-section') }}>
-  <div class=\"hero-column-left\"{% if node.field_backdrop_image.entity %} style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary-50) 0%, var(--primary) 50%), url('{{ file_url(content.field_backdrop_image.0['#item'].entity.uri.value) }}');\"{% else %} style=\"background-color: var(--primary);\" {% endif %}>
+  <div class=\"hero-column-left\"{% if node.field_backdrop_image.entity %} style=\"background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary-50) 0%, var(--primary) 100%), url('{{ file_url(content.field_backdrop_image.0['#item'].entity.uri.value) }}');\"{% else %} style=\"background-color: var(--primary);\" {% endif %}>
     <div class=\"hero-column-left-content\">
       <h2 class=\"hero-title\">{{ content.field_title }}</h2>
       <p class=\"hero-subtitle\">{{ content.field_subtitle }}</p>
       <button class=\"secondary-button-solar\">{{ content.field_button_text }}</button>
       <div class=\"hero-scroll-icon-container\">
-        <img class=\"hero-scroll-icon\" src=\"{{ file_url(content.field_icon.0['#item'].entity.uri.value) }}\" />
+        {# <img class=\"hero-scroll-icon\" src=\"{{ file_url(content.field_icon.0['#item'].entity.uri.value) }}\" /> #}
+        {{ content.field_icon }}
       </div>
     </div>
   </div>
