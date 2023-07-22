@@ -2,6 +2,7 @@
 :root {
   --base: #f8f7f8;
   --primary: #282a5b;
+  --primary-50: rgba(40, 42, 91, 0.5);
   --primary-focus: #c5c8e3;
   --secondary: #66c4ac;
   --secondary-focus: #b8e2d2;
@@ -38,6 +39,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 18px !important;
+  max-width: 1080px;
 }
 
 /* Links */
@@ -128,4 +130,15 @@ a {
 .hero-column-right {
   width: 40%;
   background-color: var(--base); /* Background color from variable */
+}
+
+.hero-scroll-icon {
+  width: 40px;
+  filter: invert(100);
+}
+
+.hero-scroll-icon-container {
+  position: absolute;
+  bottom: 10%;
+  margin-bottom: 20px;
 }
