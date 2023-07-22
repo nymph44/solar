@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="480d1a58-9267-4133-8808-0c16850ea7b7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Assertion/composer.json" />
+      <option value="$PROJECT_DIR$/core/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/PhpStorage/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/ClassFinder/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Render/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/ProxyBuilder/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/empty-fixture-allowing-core/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/FileSecurity/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/FileCache/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Annotation/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Gettext/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Plugin/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-core-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/modules/contrib/admin_toolbar/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Transliteration/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Uuid/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/empty-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/EventDispatcher/composer.json" />
+      <option value="$PROJECT_DIR$/modules/contrib/entity_reference_revisions/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/FrontMatter/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Diff/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Serialization/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/DependencyInjection/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Datetime/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/drupal-assets-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Utility/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Discovery/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/HttpFoundation/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Version/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/scaffold-override-fixture/composer.json" />
+      <option value="$PROJECT_DIR$/modules/contrib/paragraphs/composer.json" />
+      <option value="$PROJECT_DIR$/core/modules/system/tests/fixtures/HtaccessTest/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/Graph/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/empty-file/composer.json" />
+      <option value="$PROJECT_DIR$/core/lib/Drupal/Component/FileSystem/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/project-with-empty-scaffold-path/composer.json" />
+      <option value="$PROJECT_DIR$/core/tests/Drupal/Tests/Composer/Plugin/Scaffold/fixtures/project-with-illegal-dir-scaffold/composer.json" />
+    </option>
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="DrupalConfiguration" enabled="true" version="9">
+    <drupalPath>$PROJECT_DIR$</drupalPath>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/mck89/peast" />
+      <path value="$PROJECT_DIR$/vendor/pear/pear_exception" />
+      <path value="$PROJECT_DIR$/vendor/pear/pear-core-minimal" />
+      <path value="$PROJECT_DIR$/vendor/pear/archive_tar" />
+      <path value="$PROJECT_DIR$/vendor/pear/console_getopt" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-vendor-hardening" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-composer-scaffold" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-project-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="2SrEugItBRcdUjQ0f6qIgroMWRi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/MAMP/htdocs/alserda",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="480d1a58-9267-4133-8808-0c16850ea7b7" name="Changes" comment="" />
+      <created>1689896524421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689896524421</updated>
+      <workItem from="1689896526034" duration="9936000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -53,6 +53,7 @@ a {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  width: fit-content;
 }
 
 .button:hover {
@@ -61,15 +62,70 @@ a {
 }
 
 /* Secondary buttons */
-.secondary-button {
-  background-color: var(--secondary);
+.secondary-button-solar {
+  background-color: var(--secondary-focus);
   color: var(--primary);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
+  width: fit-content;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: bold;
 }
 
-.secondary-button:hover {
-  background-color: var(--primary);
+.secondary-button-solar:hover {
+  background-color: var(--secondary);
   color: var(--base);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #282a5b;
+}
+
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left column styles */
+.hero-column-left {
+  position: relative; /* For positioning the overlay */
+  width: 60%;
+  background: var(--primary); /* Fallback background color */
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 50%,
+    transparent 100%
+  ); /* Adjust the image path */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Left column overlay */
+.hero-column-left {
+  position: relative; /* For positioning the overlay */
+  background-size: cover;
+  background-position: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+/* Left column content styles */
+.hero-column-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 40px; /* Adjust as needed */
+  color: white; /* Text color for title, subtitle, and button */
+}
+
+/* Right column styles */
+.hero-column-right {
+  width: 40%;
+  background-color: var(--base); /* Background color from variable */
 }

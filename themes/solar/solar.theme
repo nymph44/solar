@@ -19,3 +19,15 @@ function solar_preprocess_image_widget(array &$variables) {
     unset($data['preview']);
   }
 }
+
+/**
+ * Implements template_preprocess_node__hero() for hero paragraphs.
+ */
+function your_theme_preprocess_node__hero(&$variables) {
+  $backdrop = $variables['node']->field_backdrop_uri->entity;
+  if ($backdrop) {
+    $variables['backdrop_uri'] = $backdrop->url();
+  }
+}
+
+
