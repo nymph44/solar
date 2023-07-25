@@ -1,19 +1,14 @@
 <div class="layout-container">
-
   <main role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
     <div class="layout-content">
+    {# {{ page.navigation }} #}
       {{ page.content }}
     </div>
-
-
   </main>
-
   {% if page.footer %}
     <footer role="contentinfo">
       {{ page.footer }}
     </footer>
   {% endif %}
-
 </div>{# /.layout-container #}

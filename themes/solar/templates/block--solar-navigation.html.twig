@@ -1,0 +1,16 @@
+<div style="background-color: var(--base);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;" class="navigation-container">
+  <div class="logo-container">
+  {# Hide the label of the SVG image field #}
+
+      <img src="{{ content.field_solar_logo_navigation[0]['#markup'] }}" alt="Logo">
+
+  </div>
+
+  <div class="phone-container">
+    {{ content.field_phone_navigation }}
+  </div>
+</div>

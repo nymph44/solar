@@ -7,3 +7,19 @@ function your_theme_preprocess_node__hero(&$variables) {
     $variables['backdrop_uri'] = $backdrop->entity->getFileUri();
   }
 }
+
+/**
+ * Implements hook_preprocess_block().
+ */
+function solar_preprocess_block(&$variables) {
+  // Check the machine name or ID of the block you want to hide the title for.
+  $target_block_id = 'block-custom-the-second-content-block';
+
+  // Check if the current block matches the target block.
+  if ($variables['elements']['#id'] === $target_block_id) {
+    // Set the block title to an empty string to hide it.
+    $variables['elements']['#configuration']['label'] = '';
+  }
+}
+
+

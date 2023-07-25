@@ -1,0 +1,28 @@
+<div class="usp-component">
+  {# <h2>{{ content['#block'].field_usp_description.0['#markup'] }}</h2> #}
+  <div class="usp-title-block">
+  <h2>Haal meer energie uit zonlicht</h2>
+  </div>
+  <div class="usp-block">
+    {# Loop through the "usp_paragraph" paragraphs #}
+    {% for item in items %}
+      {% if item.content['#paragraph'] is not empty %}
+        {% set paragraph = item.content['#paragraph'] %}
+        <div class="usp-container">
+          {# Display the usp title #}
+          {# {{ paragraph.field_usp_title.value }} #}
+          <div class="usp-item">
+            <div class="usp-icon">
+              {# Display the usp icon image using the img tag #}
+              <img src="{{ file_url(paragraph.field_usp_icon.entity.uri.value) }}" alt="{{ paragraph.field_usp_icon.alt }}">
+            </div>
+            <div class="usp-text">
+              {# Display the usp text #}
+              {{ paragraph.field_usp_text.value }}
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

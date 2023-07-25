@@ -31,5 +31,18 @@ function your_theme_preprocess_node__hero(&$variables) {
 }
 
 
+/**
+ * Implements hook_preprocess_block().
+ */
+function solar_preprocess_block(&$variables) {
+  // Check the machine name of the block you want to hide the description for.
+  $target_block_machine_name = 'second_main_content_paragraph';
+
+  // Check if the current block matches the target block.
+  if (isset($variables['elements']['#configuration']['id']) && $variables['elements']['#configuration']['id'] === $target_block_machine_name) {
+    // Set the block description to an empty string to hide it.
+    $variables['elements']['#configuration']['description'] = '';
+  }
+}
 
 

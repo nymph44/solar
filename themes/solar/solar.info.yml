@@ -14,7 +14,10 @@ regions:
   footer: Footer
   page_top: Page top
   page_bottom: Page bottom
+scripts:
+  js/custom-block-scripts.js: {}
 libraries:
   - solar/global-css
   - solar/saira
   - solar/base
+  - core/jquery

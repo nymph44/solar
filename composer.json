@@ -17,10 +17,13 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/auto_entitylabel": "^3.0",
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
         "drupal/core-vendor-hardening": "^10.1",
+        "drupal/ctools": "^4.0",
+        "drupal/devel": "^5.1",
         "drupal/paragraphs": "^1.15",
         "drupal/svg_image_field": "^2.2"
     },
