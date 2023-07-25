@@ -1,0 +1,23 @@
+<div class="footer-block">
+{# field--block-content--field-footer-paragraph--footer-block.html.twig #}
+<div class="footer-wrapper">
+  {# Loop through the "field_footer_paragraph" paragraphs #}
+  {% for item in items %}
+    {% if item.content['#paragraph'] is not empty %}
+      {% set paragraph = item.content['#paragraph'] %}
+
+      {# Display the footer logo #}
+      <div class="logo-container">
+        {# Display the footer logo image using the img tag #}
+        <img class="footer-logo" src="{{ file_url(paragraph.field_footer_logo.entity.uri.value) }}" alt="{{ paragraph.field_footer_logo.alt }}">
+      </div>
+
+         {# Display the footer contents #}
+      <div class="footer-contents">
+        <p>{{ paragraph.field_footer_contents.value }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+</div>
+

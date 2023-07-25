@@ -1,4 +1,4 @@
-/* Kleuren */
+/* Colors */
 :root {
   --base: #f8f7f8;
   --primary: #282a5b;
@@ -7,39 +7,59 @@
   --secondary: #66c4ac;
   --secondary-focus: #b8e2d2;
   --neutral: #9dd1e1;
+  --neutral-opacity: rgba(157, 209, 225, 0.22);
   --accent: #f2e5ab;
+  --inactive: #d8d8d8;
 }
 
-/* Typeface */
+/* Typography */
+:root {
+  --font-family-primary: "Saira", sans-serif;
+  --font-family-secondary: "Open Sans", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --font-size-h1: 50px;
+  --font-size-h2: 40px;
+  --font-size-h3: 22px;
+  --font-size-body: 18px;
+}
+
 h1 {
-  font-family: "Saira", sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: 500;
-  font-size: 50px;
+  font-size: var(--font-size-h1);
   font-style: normal;
-  line-height: 53px; /* 106% */
+  line-height: 1.06; /* 106% */
   letter-spacing: -0.5px;
 }
 
 h2 {
-  font-family: "Saira", sans-serif;
+  font-family: var(--font-family-primary);
   font-weight: 500;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: var(--font-size-h2);
+  line-height: 1.25;
 }
 
 h3 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 22px;
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h3);
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 31px; /* 147.619% */
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-body);
+  line-height: 1.476; /* 147.619% */
+  background-color: var(--base);
+}
+
+.layout-container {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-body) !important;
+  /* max-width: 1080px; */
 }
 
 .layout-container {
@@ -222,7 +242,7 @@ a {
   justify-content: center;
   height: 100%;
   width: 50%;
-  padding: 40px; /* Adjust as needed */
+  /* padding: 40px;  */
   color: white; /* Text color for title, subtitle, and button */
   margin-left: auto;
   margin-right: auto;
@@ -238,12 +258,16 @@ a {
 }
 
 .block-content-first-right-image {
-  width: 100%;
-  height: 100%;
+  width: 85%;
+  height: 85%;
   object-fit: cover;
+  margin-right: -3vw;
+  z-index: 1;
 }
 
 .block-content-first-right-image-container {
+  display: flex;
+  align-items: center;
   position: relative;
   margin-left: -7vw;
   width: 100%;
@@ -257,7 +281,7 @@ a {
 }
 
 .second-content-block-left {
-  width: 50%;
+  width: 40%;
   background-color: var(--base);
   display: flex;
   flex-direction: column;
@@ -265,9 +289,9 @@ a {
 }
 
 .second-content-block-right {
-  background-color: var(--base);
+  background-color: var(--neutral-opacity);
   position: relative;
-  width: 50%;
+  width: 60%;
   height: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -278,7 +302,7 @@ a {
 }
 
 .second-content-block-right-shortened {
-  width: 75%;
+  width: 50%;
 }
 
 .second-content-block-left-image-container {
@@ -287,12 +311,16 @@ a {
   height: 75%;
   display: flex;
   justify-content: end;
+  align-items: center;
 }
 
 .second-content-block-left-image {
-  width: 75%;
-  height: 100%;
+  width: 93%;
+  height: 70%;
   object-fit: cover;
+  margin-right: -10vw;
+  z-index: 1;
+  aspect-ratio: 1/1;
 }
 
 .contextual-region > h2 {
@@ -318,8 +346,15 @@ a {
 
 .usp-block {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 15px;
+}
+
+.usp-title {
+  color: var(--primary);
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .usp-title-block {
@@ -330,6 +365,9 @@ a {
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
 }
 
 .usp-component {
@@ -365,12 +403,13 @@ a {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--base);
+  background-color: var(--inactive);
 }
 
 .usp-icon {
   aspect-ratio: 1/1;
   width: 50px;
+  fill: var(--secondary);
 }
 
 .usp-text {
@@ -378,4 +417,79 @@ a {
   font-weight: 700;
   font-size: 18px;
   color: var(--primary);
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.testimonial-location {
+  font-weight: var(--font-weight-bold);
+  font-size: 18px;
+  color: var(--primary);
+}
+
+.testimonial-block {
+  display: flex;
+  /* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-title {
+  color: var(--primary);
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-user {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonial-star {
+  display: flex;
+}
+
+.testimonial-star-icon {
+  width: 20px;
+}
+
+.testimonial-wrapper {
+  background-color: var(--base);
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-wrapper {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-block {
+  background-color: var(--base);
+  width: 100%;
+  border-top: 2px solid var(--inactive);
+}
+
+.footer-logo {
+  width: 100px;
+  padding-right: 100px;
+}
+
+.footer-contents {
+  color: var(--primary);
+  font-weight: 400;
+  font-size: 14px;
 }

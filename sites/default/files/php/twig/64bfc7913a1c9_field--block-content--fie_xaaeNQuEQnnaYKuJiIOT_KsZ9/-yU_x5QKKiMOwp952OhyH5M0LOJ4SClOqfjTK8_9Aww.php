@@ -35,59 +35,53 @@ class __TwigTemplate_ca2b993347cc2e1d21b105d36ce0e873 extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 2
+        // line 1
         echo "<div style=\"width:100%; height:935px; background-image: url('/alserda/sites/default/files/default_images/energie.jpg'); background-size: cover; display:flex; flex-direction:column; justify-content:center;\">
   <div class=\"usp-component\">
     <div class=\"usp-title-block\">
-      <h2 style=\"color: var(--primary)\">Haal meer energie uit zonlicht</h2>
+      <h2 class=\"usp-title\">Haal meer energie uit zonlicht</h2>
     </div>
     <div class=\"usp-block\">
       ";
-        // line 9
-        echo "      ";
+        // line 7
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable(($context["items"] ?? null));
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
-            // line 10
+            // line 8
             echo "        ";
-            if ( !twig_test_empty((($__internal_compile_0 = twig_get_attribute($this->env, $this->source, $context["item"], "content", [], "any", false, false, true, 10)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["#paragraph"] ?? null) : null))) {
-                // line 11
+            if ( !twig_test_empty((($__internal_compile_0 = twig_get_attribute($this->env, $this->source, $context["item"], "content", [], "any", false, false, true, 8)) && is_array($__internal_compile_0) || $__internal_compile_0 instanceof ArrayAccess ? ($__internal_compile_0["#paragraph"] ?? null) : null))) {
+                // line 9
                 echo "          ";
-                $context["paragraph"] = (($__internal_compile_1 = twig_get_attribute($this->env, $this->source, $context["item"], "content", [], "any", false, false, true, 11)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["#paragraph"] ?? null) : null);
-                // line 12
+                $context["paragraph"] = (($__internal_compile_1 = twig_get_attribute($this->env, $this->source, $context["item"], "content", [], "any", false, false, true, 9)) && is_array($__internal_compile_1) || $__internal_compile_1 instanceof ArrayAccess ? ($__internal_compile_1["#paragraph"] ?? null) : null);
+                // line 10
                 echo "          <div class=\"usp-container\">
-            ";
-                // line 14
-                echo "            ";
-                // line 15
-                echo "            <div class=\"usp-item\">
+            <div class=\"usp-item\">
               <div class=\"usp-icon-container\">
                 ";
-                // line 18
+                // line 14
                 echo "                <img class=\"usp-icon\" src=\"";
-                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getFileUrl($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["paragraph"] ?? null), "field_usp_icon", [], "any", false, false, true, 18), "entity", [], "any", false, false, true, 18), "uri", [], "any", false, false, true, 18), "value", [], "any", false, false, true, 18), 18, $this->source)), "html", null, true);
+                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->extensions['Drupal\Core\Template\TwigExtension']->getFileUrl($this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["paragraph"] ?? null), "field_usp_icon", [], "any", false, false, true, 14), "entity", [], "any", false, false, true, 14), "uri", [], "any", false, false, true, 14), "value", [], "any", false, false, true, 14), 14, $this->source)), "html", null, true);
                 echo "\" alt=\"";
-                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["paragraph"] ?? null), "field_usp_icon", [], "any", false, false, true, 18), "alt", [], "any", false, false, true, 18), 18, $this->source), "html", null, true);
+                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["paragraph"] ?? null), "field_usp_icon", [], "any", false, false, true, 14), "alt", [], "any", false, false, true, 14), 14, $this->source), "html", null, true);
                 echo "\">
               </div>
               <div class=\"usp-text\">
                 ";
-                // line 22
-                echo "                ";
-                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["paragraph"] ?? null), "field_usp_text", [], "any", false, false, true, 22), "value", [], "any", false, false, true, 22), 22, $this->source), "html", null, true);
+                // line 17
+                echo $this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["paragraph"] ?? null), "field_usp_text", [], "any", false, false, true, 17), "value", [], "any", false, false, true, 17), 17, $this->source), "html", null, true);
                 echo "
               </div>
             </div>
           </div>
         ";
             }
-            // line 27
+            // line 22
             echo "      ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 28
+        // line 23
         echo "    </div>
   </div>
 </div>
@@ -106,32 +100,27 @@ class __TwigTemplate_ca2b993347cc2e1d21b105d36ce0e873 extends Template
 
     public function getDebugInfo()
     {
-        return array (  91 => 28,  85 => 27,  76 => 22,  67 => 18,  63 => 15,  61 => 14,  58 => 12,  55 => 11,  52 => 10,  47 => 9,  39 => 2,);
+        return array (  85 => 23,  79 => 22,  71 => 17,  62 => 14,  57 => 10,  54 => 9,  51 => 8,  47 => 7,  39 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("{# block--block-content--f9e522ed-19d0-4c02-8ab9-8f4e21ab52a1.html.twig #}
-<div style=\"width:100%; height:935px; background-image: url('/alserda/sites/default/files/default_images/energie.jpg'); background-size: cover; display:flex; flex-direction:column; justify-content:center;\">
+        return new Source("<div style=\"width:100%; height:935px; background-image: url('/alserda/sites/default/files/default_images/energie.jpg'); background-size: cover; display:flex; flex-direction:column; justify-content:center;\">
   <div class=\"usp-component\">
     <div class=\"usp-title-block\">
-      <h2 style=\"color: var(--primary)\">Haal meer energie uit zonlicht</h2>
+      <h2 class=\"usp-title\">Haal meer energie uit zonlicht</h2>
     </div>
     <div class=\"usp-block\">
-      {# Loop through the \"usp_paragraph\" paragraphs #}
       {% for item in items %}
         {% if item.content['#paragraph'] is not empty %}
           {% set paragraph = item.content['#paragraph'] %}
           <div class=\"usp-container\">
-            {# Display the usp title #}
-            {# {{ paragraph.field_usp_title.value }} #}
             <div class=\"usp-item\">
               <div class=\"usp-icon-container\">
                 {# Display the usp icon image using the img tag #}
                 <img class=\"usp-icon\" src=\"{{ file_url(paragraph.field_usp_icon.entity.uri.value) }}\" alt=\"{{ paragraph.field_usp_icon.alt }}\">
               </div>
               <div class=\"usp-text\">
-                {# Display the usp text #}
                 {{ paragraph.field_usp_text.value }}
               </div>
             </div>
@@ -146,9 +135,9 @@ class __TwigTemplate_ca2b993347cc2e1d21b105d36ce0e873 extends Template
     
     public function checkSecurity()
     {
-        static $tags = array("for" => 9, "if" => 10, "set" => 11);
-        static $filters = array("escape" => 18);
-        static $functions = array("file_url" => 18);
+        static $tags = array("for" => 7, "if" => 8, "set" => 9);
+        static $filters = array("escape" => 14);
+        static $functions = array("file_url" => 14);
 
         try {
             $this->sandbox->checkSecurity(
