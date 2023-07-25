@@ -1,0 +1,16 @@
+{# paragraph--second-main-content-paragraph--default--second-content-block-right.html.twig #}
+<div class="second-content-block-right">
+  <div class="second-content-block-right-shortened">
+    {# The title is hidden, so it won't be rendered #}
+    {% if paragraph.field_second_main_content_title %}
+      <h2>{{ paragraph.field_second_main_content_title.value }}</h2>
+    {% endif %}
+    {% if paragraph.field_test %}
+      <p>{{ paragraph.field_test.value }}</p>
+    {% endif %}
+
+    {% if paragraph.field_second_main_content_button %}
+      <button class="base-button-solar">{{ paragraph.field_second_main_content_button.value }}</button>
+    {% endif %}
+  </div>
+</div>

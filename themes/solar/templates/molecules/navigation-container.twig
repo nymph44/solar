@@ -1,0 +1,27 @@
+{# templates/molecules/navigation-container.twig #}
+<div class="navigation-container">
+  <div class="navigation-wrapper">
+    {% for item in items %}
+      {% if item.content['#paragraph'] is not empty %}
+        {% set paragraph = item.content['#paragraph'] %}
+
+        {# Display the logo if available #}
+        {% if paragraph.field_logo|length %}
+          <div class="logo-container">
+            <img src="{{ file_url(paragraph.field_logo|first.entity.uri.value) }}" alt="logo" style="width: 100px; margin-right: 10px; margin-top: 5px;" />
+          </div>
+        {% endif %}
+
+        {# Display the phone number with the phone icon #}
+        <div class="phone-container">
+          <span class="whatsapp-icon">
+            {% include '@solar/atoms/phone-icon.svg.twig' %}
+          </span>
+          <a>Whatsapp</a>
+          <span style="color: var(--inactive)">&nbsp;/&nbsp;</span>
+          <span style="margin-left: 4px; margin-right: 4px; color: var(--primary);">{{ paragraph.field_phone.value }}</span>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

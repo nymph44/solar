@@ -21,3 +21,13 @@ libraries:
   - solar/saira
   - solar/base
   - core/jquery
+  - solar/colors
+  - solar/typography
+  - solar/buttons
+  - solar/layout
+  - solar/components
+  - solar/hero-section
+  - solar/usp
+  - solar/testimonials
+  - solar/navigation
+  - solar/footer

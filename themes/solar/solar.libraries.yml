@@ -119,3 +119,62 @@ user:
     component:
       css/components/user.css:
         weight: -10
+colors:
+  version: 1.x
+  css:
+    theme:
+      css/colors.css: {}
+
+typography:
+  version: 1.x
+  css:
+    theme:
+      css/typography.css: {}
+
+buttons:
+  version: 1.x
+  css:
+    theme:
+      css/buttons.css: {}
+
+layout:
+  version: 1.x
+  css:
+    theme:
+      css/layout.css: {}
+
+components:
+  version: 1.x
+  css:
+    theme:
+      css/components.css: {}
+
+hero-section:
+  version: 1.x
+  css:
+    theme:
+      css/hero-section.css: {}
+
+usp:
+  version: 1.x
+  css:
+    theme:
+      css/usp.css: {}
+
+testimonials:
+  version: 1.x
+  css:
+    theme:
+      css/testimonials.css: {}
+
+navigation:
+  version: 1.x
+  css:
+    theme:
+      css/navigation.css: {}
+
+footer:
+  version: 1.x
+  css:
+    theme:
+      css/footer.css: {}

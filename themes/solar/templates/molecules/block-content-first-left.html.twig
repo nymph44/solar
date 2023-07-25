@@ -1,0 +1,16 @@
+<!-- templates/molecules/block-content-first-left.html.twig -->
+<div class="block-content-first-left paragraph paragraph--{{ paragraph_entity.bundle|clean_class }}">
+  <div class="block-content-first-content">
+    {% if title %}
+      <h2>{{ title }}</h2>
+    {% endif %}
+
+    {% if subtitle %}
+      <p>{{ subtitle }}</p>
+    {% endif %}
+
+    {% if buttonLabel %}
+      <button class="base-button-solar">{{ buttonLabel }}</button>
+    {% endif %}
+  </div>
+</div>

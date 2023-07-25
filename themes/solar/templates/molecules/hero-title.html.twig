@@ -1,0 +1,14 @@
+<!-- templates/molecules/hero-title.html.twig -->
+<div class="hero-column-left" style="background-color: var(--primary); background-image: linear-gradient(to bottom, var(--primary-50) 0%, var(--primary) 100%), url('/alserda/sites/default/files/default_images/header_1.jpg');">
+  <div class="hero-column-left-content">
+    <h2 class="hero-title">{{ title }}</h2>
+    <p class="hero-subtitle">{{ subtitle }}</p>
+    <button class="secondary-button-solar">{{ buttonLabel }}</button>
+    <div class="hero-scroll-icon-container">
+      <div class="svg-icon">
+        <!-- Include the SVG icon Atom component -->
+        {% include '@solar/atoms/scroll-icon.svg.twig' %}
+      </div>
+    </div>
+  </div>
+</div>

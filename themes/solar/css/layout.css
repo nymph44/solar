@@ -1,24 +1,13 @@
 .layout-container {
-  font-size: 18px;
-  /* border-radius: 5px;
-  margin: auto;
-  position: relative;
-  clear: both; */
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-body) !important;
+  /* max-width: 1080px; */
 }
 
-.region-header {
-  max-width: 960px;
-  margin: 0px;
-  height: 150px;
+.layout-container {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px !important;
+  /* max-width: 1080px; */
 }
-.site-logo {
-  float: left;
-  padding-top: 35px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  clear: both;
-}
-
-/* body {
-  font-family: "Saira", sans-serif;
-} */

@@ -1,0 +1,42 @@
+/* Typography */
+:root {
+  --font-family-primary: "Saira", sans-serif;
+  --font-family-secondary: "Open Sans", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --font-size-h1: 50px;
+  --font-size-h2: 40px;
+  --font-size-h3: 22px;
+  --font-size-body: 18px;
+}
+
+h1 {
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: var(--font-size-h1);
+  font-style: normal;
+  line-height: 1.06; /* 106% */
+  letter-spacing: -0.5px;
+}
+
+h2 {
+  font-family: var(--font-family-primary);
+  font-weight: 500;
+  font-size: var(--font-size-h2);
+  line-height: 1.25;
+}
+
+h3 {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-h3);
+}
+
+body {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-body);
+  line-height: 1.476; /* 147.619% */
+  background-color: var(--base);
+}

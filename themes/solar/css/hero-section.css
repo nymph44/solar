@@ -1,0 +1,58 @@
+/* Hero section styles */
+.hero-section {
+  display: flex;
+  height: 935px;
+  max-height: 100vh;
+}
+
+/* Left column styles */
+.hero-column-left {
+  position: relative; /* For positioning the overlay */
+  width: 60%;
+  background: var(--base); /* Fallback background color */
+  background: linear-gradient(
+    to bottom,
+    var(--primary) 50%,
+    transparent 100%
+  ); /* Adjust the image path */
+  background-size: cover;
+  background-position: center;
+}
+
+/* Left column content styles */
+.hero-column-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 40px; /* Adjust as needed */
+  color: white; /* Text color for title, subtitle, and button */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Right column styles */
+.hero-column-right {
+  width: 40%;
+  background-color: var(--base); /* Background color from variable */
+}
+
+.hero-scroll-icon {
+  width: 40px;
+  fill: var(--secondary);
+  filter: hue-rotate(0deg); /* Replace with the desired hue angle, if needed */
+  bottom: 0;
+  position: absolute;
+}
+
+.hero-scroll-icon-container {
+  /* position: absolute; */
+  bottom: 10%;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.svg-icon {
+  color: var(--secondary-focus);
+}

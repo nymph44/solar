@@ -1,0 +1,8 @@
+<!-- templates/molecules/block-content-first-right.html.twig -->
+<div class="block-content-first-right">
+  <div class="block-content-first-right-image-container">
+    {% if image %}
+      <img class="block-content-first-right-image" src="{{ file_url(image.uri.value) }}" alt="{{ image.alt }}" />
+    {% endif %}
+  </div>
+</div>

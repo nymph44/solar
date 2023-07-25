@@ -1,0 +1,28 @@
+{# templates/molecules/testimonial-wrapper.twig #}
+<div class="testimonial-wrapper">
+  <h2 class="testimonial-title">Dit vinden klanten van Solar Cleaning Company</h2>
+  <div class="testimonial-block">
+    {# Display the block description #}
+    {% if content['#block_content'] %}
+      <div class="block-description">
+        {{ content['#block_content'].field_block_description.value }}
+      </div>
+    {% endif %}
+
+    {# Loop through the "testimonial_reference" paragraphs #}
+    {% for item in items %}
+      {% if item.content['#paragraph'] is not empty %}
+        {% set paragraph = item.content['#paragraph'] %}
+        <div class="testimonial">
+          {# Calculate the number of lit-up stars #}
+          {% set numStars = paragraph.field_testimonial_review_stars.value|default(0) %}
+          {# Ensure numStars is capped at 5 #}
+          {% set cappedStars = numStars > 5 ? 5 : numStars %}
+
+          {# Display the testimonial user and username using the testimonial-user.twig molecule #}
+          {% include '@solar/molecules/testimonial-user.twig' %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>

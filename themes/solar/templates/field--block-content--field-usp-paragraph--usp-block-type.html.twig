@@ -1,23 +1,12 @@
+{# templates/field--block-content--field-usp-paragraph--usp-block-type.html.twig #}
 <div style="width:100%; height:935px; background-image: url('/alserda/sites/default/files/default_images/energie.jpg'); background-size: cover; display:flex; flex-direction:column; justify-content:center;">
   <div class="usp-component">
-    <div class="usp-title-block">
-      <h2 class="usp-title">Haal meer energie uit zonlicht</h2>
-    </div>
+    {% include '@solar/molecules/usp-title-block.twig' with { 'title': "Haal meer energie uit zonlicht" } %}
     <div class="usp-block">
       {% for item in items %}
         {% if item.content['#paragraph'] is not empty %}
           {% set paragraph = item.content['#paragraph'] %}
-          <div class="usp-container">
-            <div class="usp-item">
-              <div class="usp-icon-container">
-                {# Display the usp icon image using the img tag #}
-                <img class="usp-icon" src="{{ file_url(paragraph.field_usp_icon.entity.uri.value) }}" alt="{{ paragraph.field_usp_icon.alt }}">
-              </div>
-              <div class="usp-text">
-                {{ paragraph.field_usp_text.value }}
-              </div>
-            </div>
-          </div>
+          {% include '@solar/molecules/usp-item.twig' %}
         {% endif %}
       {% endfor %}
     </div>
