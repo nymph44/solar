@@ -12,8 +12,8 @@ use Twig\Sandbox\SecurityNotAllowedFunctionError;
 use Twig\Source;
 use Twig\Template;
 
-/* __string_template__15e4c2886fb2554f14cf09e05167a91f */
-class __TwigTemplate_4cfb655bd34dfc6c4264bcd3fe1c9279 extends Template
+/* themes/solar/templates/field--block-content--field-description--usp-block-type.html.twig */
+class __TwigTemplate_a3e579070b07b9b566b1f2f50ec4070f extends Template
 {
     private $source;
     private $macros = [];
@@ -35,40 +35,33 @@ class __TwigTemplate_4cfb655bd34dfc6c4264bcd3fe1c9279 extends Template
     protected function doDisplay(array $context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 1
-        echo twig_nl2br($this->extensions['Drupal\Core\Template\TwigExtension']->escapeFilter($this->env, $this->sandbox->ensureToStringAllowed(($context["value"] ?? null), 1, $this->source), "html", null, true));
     }
 
     public function getTemplateName()
     {
-        return "__string_template__15e4c2886fb2554f14cf09e05167a91f";
-    }
-
-    public function isTraitable()
-    {
-        return false;
+        return "themes/solar/templates/field--block-content--field-description--usp-block-type.html.twig";
     }
 
     public function getDebugInfo()
     {
-        return array (  39 => 1,);
+        return array ();
     }
 
     public function getSourceContext()
     {
-        return new Source("{# inline_template_start #}{{ value|nl2br }}", "__string_template__15e4c2886fb2554f14cf09e05167a91f", "");
+        return new Source("", "themes/solar/templates/field--block-content--field-description--usp-block-type.html.twig", "C:\\MAMP\\htdocs\\alserda\\themes\\solar\\templates\\field--block-content--field-description--usp-block-type.html.twig");
     }
     
     public function checkSecurity()
     {
         static $tags = array();
-        static $filters = array("nl2br" => 1, "escape" => 1);
+        static $filters = array();
         static $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
                 [],
-                ['nl2br', 'escape'],
+                [],
                 []
             );
         } catch (SecurityError $e) {

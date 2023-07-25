@@ -37,11 +37,12 @@ class __TwigTemplate_4ad5fd725da630e5a8a3b2fe544aad9d extends Template
         $macros = $this->macros;
         // line 1
         echo "<div class=\"navigation-container\">
+<div class=\"navigation-wrapper\">
   <div class=\"logo-container\">
   ";
-        // line 4
+        // line 5
         echo "  ";
-        // line 6
+        // line 7
         echo "    <img src=\"/alserda/sites/default/files/default_images/logo.svg\" alt=\"logo\" style=\"width: 100px; margin-right: 10px; margin-top: 5px;\"/>
   </div>
 
@@ -51,6 +52,8 @@ class __TwigTemplate_4ad5fd725da630e5a8a3b2fe544aad9d extends Template
     <span style=\"margin-left:4px; margin-right:4px;\">/</span>
     <span style=\"color: var(--primary)\">0511 - 82 03 97</span>
   </div>
+  </div>
+
 </div>
 ";
     }
@@ -62,12 +65,13 @@ class __TwigTemplate_4ad5fd725da630e5a8a3b2fe544aad9d extends Template
 
     public function getDebugInfo()
     {
-        return array (  45 => 6,  43 => 4,  39 => 1,);
+        return array (  46 => 7,  44 => 5,  39 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<div class=\"navigation-container\">
+<div class=\"navigation-wrapper\">
   <div class=\"logo-container\">
   {# Hide the label of the SVG image field #}
   {# {{ content.field_logo.0['#title'] }}
@@ -81,6 +85,8 @@ class __TwigTemplate_4ad5fd725da630e5a8a3b2fe544aad9d extends Template
     <span style=\"margin-left:4px; margin-right:4px;\">/</span>
     <span style=\"color: var(--primary)\">0511 - 82 03 97</span>
   </div>
+  </div>
+
 </div>
 ", "themes/solar/templates/block--block-content--7652d229-ec50-4671-90aa-7b187db35a71.html.twig", "C:\\MAMP\\htdocs\\alserda\\themes\\solar\\templates\\block--block-content--7652d229-ec50-4671-90aa-7b187db35a71.html.twig");
     }

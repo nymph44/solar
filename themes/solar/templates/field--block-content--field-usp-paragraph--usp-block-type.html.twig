@@ -1,28 +1,30 @@
-<div class="usp-component">
-  {# <h2>{{ content['#block'].field_usp_description.0['#markup'] }}</h2> #}
-  <div class="usp-title-block">
-  <h2>Haal meer energie uit zonlicht</h2>
-  </div>
-  <div class="usp-block">
-    {# Loop through the "usp_paragraph" paragraphs #}
-    {% for item in items %}
-      {% if item.content['#paragraph'] is not empty %}
-        {% set paragraph = item.content['#paragraph'] %}
-        <div class="usp-container">
-          {# Display the usp title #}
-          {# {{ paragraph.field_usp_title.value }} #}
-          <div class="usp-item">
-            <div class="usp-icon">
-              {# Display the usp icon image using the img tag #}
-              <img src="{{ file_url(paragraph.field_usp_icon.entity.uri.value) }}" alt="{{ paragraph.field_usp_icon.alt }}">
-            </div>
-            <div class="usp-text">
-              {# Display the usp text #}
-              {{ paragraph.field_usp_text.value }}
+{# block--block-content--f9e522ed-19d0-4c02-8ab9-8f4e21ab52a1.html.twig #}
+<div style="width:100%; height:935px; background-image: url('/alserda/sites/default/files/default_images/energie.jpg'); background-size: cover; display:flex; flex-direction:column; justify-content:center;">
+  <div class="usp-component">
+    <div class="usp-title-block">
+      <h2 style="color: var(--primary)">Haal meer energie uit zonlicht</h2>
+    </div>
+    <div class="usp-block">
+      {# Loop through the "usp_paragraph" paragraphs #}
+      {% for item in items %}
+        {% if item.content['#paragraph'] is not empty %}
+          {% set paragraph = item.content['#paragraph'] %}
+          <div class="usp-container">
+            {# Display the usp title #}
+            {# {{ paragraph.field_usp_title.value }} #}
+            <div class="usp-item">
+              <div class="usp-icon-container">
+                {# Display the usp icon image using the img tag #}
+                <img class="usp-icon" src="{{ file_url(paragraph.field_usp_icon.entity.uri.value) }}" alt="{{ paragraph.field_usp_icon.alt }}">
+              </div>
+              <div class="usp-text">
+                {# Display the usp text #}
+                {{ paragraph.field_usp_text.value }}
+              </div>
             </div>
           </div>
-        </div>
-      {% endif %}
-    {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </div>
