@@ -137,6 +137,12 @@ buttons:
     theme:
       css/buttons.css: {}
 
+# buttons:
+#   version: 1.x
+#   scss:
+#     theme:
+#       scss/buttons.scss: {}
+
 layout:
   version: 1.x
   css:

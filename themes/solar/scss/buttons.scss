@@ -1,19 +1,18 @@
-/* Buttons */
-.button {
+.btn {
   background-color: var(--base);
   color: var(--primary);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   width: fit-content;
+
+  &:hover {
+    background-color: var(--primary);
+    color: var(--base);
+  }
 }
 
-.button:hover {
-  background-color: var(--primary);
-  color: var(--base);
-}
-
-.base-button-solar {
+.btn--base {
   background-color: var(--base);
   color: var(--primary);
   border: none;
@@ -23,14 +22,14 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: bold;
+
+  &:hover {
+    background-color: var(--primary-focus);
+    color: var(--primary);
+  }
 }
 
-.base-button-solar:hover {
-  background-color: var(--primary-focus);
-  color: var(--primary);
-}
-
-.secondary-button-solar {
+.btn--secondary {
   background-color: var(--secondary-focus);
   color: var(--primary);
   border: none;
@@ -40,9 +39,9 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-weight: bold;
-}
 
-.secondary-button-solar:hover {
-  background-color: var(--secondary);
-  color: var(--base);
+  &:hover {
+    background-color: var(--secondary);
+    color: var(--base);
+  }
 }
