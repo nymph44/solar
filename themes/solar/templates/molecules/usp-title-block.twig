@@ -1,8 +1,4 @@
 {# templates/molecules/usp-title-block.twig #}
 <div class="usp-title-block">
-  <h2 class="usp-title">
-    {# {{dump(paragraph)}} #}
-    {# {{field_description}} #}
-    {{ title }}
-  </h2>
+  {% include '@solar/atoms/usp-item.twig' %}
 </div>

@@ -7,9 +7,7 @@
 
         {# Display the logo if available #}
         {% if paragraph.field_logo|length %}
-          <div class="logo-container">
-            <img src="{{ file_url(paragraph.field_logo|first.entity.uri.value) }}" alt="logo" style="width: 100px; margin-right: 10px; margin-top: 5px;" />
-          </div>
+          {% include '@solar/atoms/navigation-container-logo.twig' %}
         {% endif %}
 
         {# Display the phone number with the phone icon #}
@@ -17,9 +15,9 @@
           <span class="whatsapp-icon">
             {% include '@solar/atoms/phone-icon.svg.twig' %}
           </span>
-          <a>Whatsapp</a>
+          {% include '@solar/atoms/navigation-container-whatsapp.twig' %}
           <span style="color: var(--inactive)">&nbsp;/&nbsp;</span>
-          <span style="margin-left: 4px; margin-right: 4px; color: var(--primary);">{{ paragraph.field_phone.value }}</span>
+            {% include '@solar/atoms/navigation-container-phone.twig' %}
         </div>
       {% endif %}
     {% endfor %}

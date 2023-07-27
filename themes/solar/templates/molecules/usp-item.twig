@@ -1,12 +1,7 @@
 {# templates/molecules/usp-item.twig #}
 <div class="usp-container">
   <div class="usp-item">
-    <div class="usp-icon-container">
-      {# Display the usp icon image using the img tag #}
-      <img class="usp-icon" src="{{ file_url(paragraph.field_usp_icon.entity.uri.value) }}" alt="{{ paragraph.field_usp_icon.alt }}">
-    </div>
-    <div class="usp-text">
-      {{ paragraph.field_usp_text.value }}
-    </div>
+    {% include '@solar/atoms/usp-item-icon.twig' %}
+    {% include '@solar/atoms/usp-item-text.twig' %}
   </div>
 </div>

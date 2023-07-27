@@ -2,7 +2,7 @@
 <div class="second-content-block-left">
   <div class="second-content-block-left-image-container">
     {% if paragraph.field_second_main_content_image %}
-      <img class="second-content-block-left-image" src="{{ file_url(paragraph.field_second_main_content_image.entity.fileuri) }}" alt="{{ paragraph.field_image_first_main.alt }}" />
+       {% include '@solar/atoms/content-block-image-left.twig' %}
     {% endif %}
   </div>
 </div>
